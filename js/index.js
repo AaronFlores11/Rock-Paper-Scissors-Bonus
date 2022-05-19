@@ -46,7 +46,7 @@ const cleanComputer = () => {
 const changeOption = (item) => {
   $containerResult.classList.remove("hidden");
   $optionPlayer.id = item;
-  $imgUser.src = `../assets/icon-${item}.svg`;
+  $imgUser.src = `https://aaronflores11.github.io/RockPaperScissorsBonus/assets/icon-${item}.svg`;
 };
 
 const getOptionRandom = () => {
@@ -102,7 +102,7 @@ const changeDataComponents = (data) => {
     $spanComputer.classList.remove("hidden");
     $optionComputer.id = data;
     $optionComputer.classList.add("animated-computer");
-    $imgComputer.src = `../assets/icon-${data}.svg`;
+    $imgComputer.src = `https://aaronflores11.github.io/RockPaperScissorsBonus/assets/icon-${data}.svg`;
   }, 1000);
 };
 
