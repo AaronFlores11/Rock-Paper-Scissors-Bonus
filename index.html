@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Rock, Papaer, Scissors</title>
+</head>
+
+<body>
+  <header class="hidden">
+    <section class="section-score">
+      <div class="container-score-name">
+        <h1>ROCK<br>PAPER<br>SCISSORS</h1>
+      </div>
+      <div class="container-score">
+        <div class="container-score-info">
+          <label>SCORE</label>
+          <h2 id="count-score">0</h2>
+        </div>
+
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="section-controls hidden">
+      <div id="paper" class="btn">
+        <span>
+          <img src="assets/icon-paper.svg" alt="paper">
+        </span>
+      </div>
+
+      <div id="scissors" class="btn">
+        <span>
+          <img src="assets/icon-scissors.svg" alt="scissors">
+        </span>
+      </div>
+
+      <div id="rock" class="btn">
+        <span>
+          <img src="assets/icon-rock.svg" alt="rock">
+        </span>
+      </div>
+
+    </section>
+
+    <section class="section-controls-hard hidden">
+      <div id="paper" class="btn">
+        <span>
+          <img src="assets/icon-paper.svg" alt="paper">
+        </span>
+      </div>
+
+      <div id="scissors" class="btn">
+        <span>
+          <img src="assets/icon-scissors.svg" alt="scissors">
+        </span>
+      </div>
+
+      <div id="rock" class="btn">
+        <span>
+          <img src="assets/icon-rock.svg" alt="rock">
+        </span>
+      </div>
+      <div id="lizard" class="btn">
+        <span>
+          <img src="assets/icon-lizard.svg" alt="lizard">
+        </span>
+      </div>
+      <div id="spock" class="btn">
+        <span>
+          <img src="assets/icon-spock.svg" alt="spock">
+        </span>
+      </div>
+
+    </section>
+
+    <section class="section-result hidden">
+
+      <div id="select-player">
+        <div id="player">
+          <span id="game-1">
+            <img src="assets/icon-paper.svg" alt="paper" id="user">
+          </span>
+        </div>
+
+        <h2 class="subtitle">YOU PICKED</h2>
+      </div>
+
+      <div id="computer">
+        <div id="invisible">
+          <div id="computer-container">
+            <span class="game-2 hidden">
+              <img src="assets/icon-rock.svg" alt="rock" id="machine">
+            </span>
+          </div>
+        </div>
+        <h2 class="subtitle">THE HOUSE PICKED</h2>
+      </div>
+
+      <div class="result-container ">
+        <h2 id="title-result">Ejemplo</h2>
+        <button id="new-game">PLAY AGAIN</button>
+      </div>
+      </div>
+
+
+    </section>
+
+    <section class="dashboard-options ">
+      <div class="container-dashboard">
+        <h2>SELECT DIFFICULTY</h2>
+        <div class="options-buttons">
+          <button id="btn-easy">EASY</button>
+          <button id="btn-hard">HARD</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hidden">
+    <button id="btn-rules">RULES</button>
+    <button id="btn-home">HOME</button>
+  </footer>
+
+  <div class="modal-container hidden">
+    <div class="modal-rules ">
+      <h2 class="title-rules">RULES</h2>
+      <img id="img-modal" alt="img-rules">
+      <img id="img-close" src="assets/icon-close.svg" alt="close">
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
